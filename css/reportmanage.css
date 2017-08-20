@@ -1,0 +1,69 @@
+body{
+    background-color:#F5F5F7;
+}
+.main{
+    margin: 100px 30px 0 280px;
+    width: auto;
+    background: white;
+}
+.main-container{
+    /*margin: 30px;*/
+    border: 1px solid #e7e7eb;
+}
+.headtext{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 52px;
+    margin-left: 15px;
+}
+.table-head button{
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+
+}
+.sprites2x-report{
+    background-image: url("../img/sprites2x.png");
+    background-size: 300px;
+    background-position: -80px -161px;
+    width: 14px;
+    height: 19px;
+    display: inline-block;
+}
+/*.table>tbody>tr>td{*/
+    /*border-bottom: 1px solid #e7e7eb;*/
+    /*background: #fff;*/
+    /*line-height: 42px;*/
+    /*height: 22px;*/
+    /*color: #8c8c8c;*/
+/*}*/
+.table>tbody>.table-tr>td{
+    line-height: 42px;
+    padding-left: 15px;
+}
+.div_0 a{
+    color: #0f0f0f;
+    font-weight: 400;
+}
+thead{
+    border-top: solid 1px  #e7e7eb;
+    /*border-bottom: none;*/
+}
+.table>thead>tr>th{
+    border-bottom: none;
+    padding-left: 15px;
+}
+.table-last{
+    border-bottom: 1px solid  #e7e7eb;
+}
+.left-foot{
+    display: inline-block;
+    line-height: 50px;
+}
+.right-foot{
+    float: right;
+    line-height: 50px;
+}
+.right-foot .pagination{
+    margin: 5px;
+}

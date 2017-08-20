@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>后台管理系统</title>
+        <link rel="stylesheet" href="css/Console-index.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reportmanage.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/Console-index.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<!--侧边栏-->
+        <aside id="console-list">
+            <div><span class="icon"></span></div>
+            <ul>
+                <li class="selected"><a href="#"><span></span>工作台</a></li>
+                <li class="line"></li>
+                <li><a href="#"><span></span>活动管理</a></li>
+                <li><a href="#"><span></span>报名表管理</a></li>
+                <li><a href="#"><span></span>问卷管理</a></li>
+                <li><a href="#"><span></span>打赏管理</a></li>
+                <li class="line"></li>
+                <li><a href="#"><span></span>会员招募</a></li>
+                <li><a href="#"><span></span>会员管理</a></li>
+                <li><a href="#"><span></span>群组管理</a></li>
+                <li class="line"></li>
+                <li><a href="#"><span></span>收入管理</a></li>
+                <li><a href="#"><span></span>账号设置</a></li>
+                <li><a href="#"><span></span>操作日志</a></li>
+            </ul>
+        </aside>
+<!--顶部菜单-->
+    <nav class="nav">
+        <h1>后台管理系统</h1>
+        <ul>
+            <li><a href="#">立即注册</a></li>
+            <li><a href="#"><span class="icon"></span><i class="icon"></i>DEMO测试帐号</a></li>
+            <li><a href="#">未认证</a></li> |
+            <li><a href="#">退出</a></li>
+            <li><a href="#"><em class="icon"></em>通知中心</a></li>
+        </ul>
+    </nav>
+<!--表格-->
+<section class="main">
+    <div class="main-container">
+        <div class="table-head">
+            <div class="headtext">报名表列表</div>
+            <button class="btn btn-success"><em class="sprites2x-report"></em>回收站(<em>21</em>)</button>
+        </div>
+        <div class=" table-body table-responsive">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>发布时间</th>
+                    <th>状态</th>
+                    <th>浏览数</th>
+                    <th>报名数</th>
+                    <th>待审核</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+               <tbody>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35825">培训</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-20 15:44</span></td><td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>1</span></td>
+                    <td class="div_4"><span>0</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35825">管理</a>
+                                    <a actid="35825" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35584">报名</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-18 22:50</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>1</span></td>
+                    <td class="div_4"><span>0</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35584">管理</a>
+                                    <a actid="35584" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35485">拆书</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-18 10:04</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>1</span></td>
+                    <td class="div_4"><span>1</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35485">管理</a>
+                                    <a actid="35485" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35299">聚焦粉丝答谢酒会</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-14 17:48</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>5</span></td>
+                    <td class="div_4"><span>1</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35299">管理</a>
+                                    <a actid="35299" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35274">喝奶茶</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-14 14:44</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>1</span></td>
+                    <td class="div_4"><span>1</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35274">管理</a>
+                                    <a actid="35274" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/35249">第1集</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-14 10:24</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>6</span></td>
+                    <td class="div_4"><span>1</span></td>
+                    <td class="div_5"><span>- -</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/35249">管理</a>
+                                    <a actid="35249" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/34753">汽车模特大赛</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-08 02:38</span></td>
+                    <td class="div_2"><span>进行中</span></td>
+                    <td class="div_3"><span>4</span></td>
+                    <td class="div_4"><span>1</span></td>
+                    <td class="div_5"><span>- -</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/34753">管理</a>
+                                    <a actid="34753" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/34208">新干事报名表</a></strong></span></td>
+                    <td class="div_1"><span>2017-07-01 12:12</span></td>
+                    <td class="div_2"><span>进行中</span></td>
+                    <td class="div_3"><span>15</span></td>
+                    <td class="div_4"><span>2</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/34208">管理</a>
+                                    <a actid="34208" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/34110">范德萨范德萨</a></strong></span></td>
+                    <td class="div_1"><span>2017-06-29 19:37</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>0</span></td>
+                    <td class="div_4"><span>0</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/34110">管理</a>
+                                    <a actid="34110" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+                <tr class="table-last table-tr">
+                    <td class="div_0"><span><strong><a href="/applyform/detail/33781">rwrww</a></strong></span></td>
+                    <td class="div_1"><span>2017-06-26 11:46</span></td>
+                    <td class="div_2"><span>已结束</span></td>
+                    <td class="div_3"><span>2</span></td>
+                    <td class="div_4"><span>0</span></td>
+                    <td class="div_5"><span>0</span></td>
+                    <td class="div_6"><span><a href="/applyform/detail/33781">管理</a>
+                                    <a actid="33781" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                </tr>
+
+               </tbody>
+            </table>
+            <div class="">
+                <div class="left-foot">共<strong>64</strong>条记录, 每页显示
+                    <select>
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="80">80</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </select>条
+                </div>
+                <div class="right-foot">
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class=""><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="table-foot">-->
+            <!--<tfoot>-->
+            <!--<div class="left-foot">共<strong>64</strong>条记录, 每页显示<select>-->
+                <!--<option value="5">5</option>-->
+                <!--<option value="10" selected>10</option>-->
+                <!--<option value="15">15</option>-->
+                <!--<option value="20">20</option>-->
+                <!--<option value="30">30</option>-->
+                <!--<option value="50">50</option>-->
+                <!--<option value="80">80</option>-->
+                <!--<option value="100">100</option>-->
+                <!--<option value="200">200</option>-->
+            <!--</select>条</div>-->
+            <!--<div class="right-foot">-->
+                <!--<ul class="pagination">-->
+                    <!--<li><a href="#">&laquo;</a></li>-->
+                    <!--<li class="active"><a href="#">1</a></li>-->
+                    <!--<li class="disabled"><a href="#">2</a></li>-->
+                    <!--<li><a href="#">3</a></li>-->
+                    <!--<li><a href="#">4</a></li>-->
+                    <!--<li><a href="#">5</a></li>-->
+                    <!--<li><a href="#">&raquo;</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--</tfoot>-->
+        <!--</div>-->
+    </div>
+
+</section>
+<!--刷新显示框-->
+    <!--<div class="cover">-->
+        <!--<div>-->
+            <!--<span class="icon"></span>-->
+            <!--<h3>产品体验提示</h3>-->
+            <!--<p>1. “DEMO账号设置”，已认证为八零年代青商汇组织账号，不可更改；</p>-->
+            <!--<p>2、请勿用该体验账号发布正式活动；</p>-->
+            <!--<p>3、体验账号绑定的银行卡为青商汇银行卡，无法对外提现；</p>-->
+            <!--<img src="img/code_qch.png" alt="">-->
+            <!--<br>-->
+            <!--<a href="javascript:;" id="turnOff1">我已阅读并知晓</a>-->
+            <!--<b class="icon" id="turnOff2"></b>-->
+        <!--</div>-->
+    <!--</div>-->
+    </body>
+</html>

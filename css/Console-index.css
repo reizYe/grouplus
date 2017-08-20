@@ -1,0 +1,215 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+a{text-decoration: none;}
+body{color: #404040;background-color: #f5f5f7}
+.clear{clear: both;}
+
+/*不断引用的图片*/
+.icon{
+    background-image: url("../img/icon.png") ;
+    background-size: 400px;
+}
+
+
+/*侧边菜单栏开始*/
+#console-list {
+    z-index: 10;
+    width: 200px;
+    height: 100%;
+    background-color: #312c57;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+#console-list>div{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    background-color: #292547 ;
+}
+#console-list>div>span {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-position: 5px -735px;
+}
+#console-list>ul{
+    list-style: none;
+    margin: 10px 0 0;
+}
+#console-list>ul>li{
+    height: 36px;
+    line-height: 36px;
+}
+#console-list>ul>li>a {
+    color: #b1b3f6;
+    width: 200px;
+    height: 36px;
+    font-size: 14px;
+    display: block;
+}
+#console-list .selected{
+    border-left: 4px solid #14cb76;
+    background: #292547;
+}
+#console-list .selected a{
+    color: white;
+}
+#console-list .line{
+    background-color: #433c79;
+    height: 1px;
+    margin: 10px 30px;
+}
+#console-list>ul>li>a:hover{
+    background-color: #292547;
+    color: white;
+}
+#console-list>ul>li>a span{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin:0 20px -9px 40px;
+    background-image: url("../img/icon.png") ;
+    background-size: 400px;
+}
+#console-list>ul>li:nth-child(1) a span{
+    background-position: -32px -44px;
+    margin-left: 36px;
+}
+#console-list>ul>li:nth-child(2n) a span{background-position: -60px -44px;}
+#console-list>ul>li:nth-child(2n+1) a span{background-position: -88px -44px;}
+#console-list>ul>li:nth-child(2n) a:hover span{background-position: -59px -190px;}
+#console-list>ul>li:nth-child(2n+1) a:hover span{background-position: -88px -44px;}
+
+/*顶部菜单栏开始*/
+.nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fdfdfe;
+    border-bottom: 1px solid #e6e6ea;
+}
+.nav>h1{
+    float: left;
+    margin: 0 0 0 240px;
+    line-height: 80px;
+    font-weight: normal;
+}
+.nav ul{
+    float: right;
+    line-height: 80px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.nav ul li:nth-child(1) a{
+    color: #14cb76;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+.nav ul li:nth-child(2) a{color: #404040;}
+.nav ul li:nth-child(2) a span {
+    width: 50px;
+    height: 50px;
+    /*display: inline-block;*/
+    margin: 15px 12px ;
+    float: left;
+    background-position: -209px -2px;
+}
+.nav ul li:nth-child(2) a{position: relative}
+.nav ul li:nth-child(2) a i {
+    width: 28px;
+    height: 22px;
+    position: absolute;
+    top: 12px;
+    left: -25px;
+    background-position: -25px -326px;
+}
+.nav ul li:nth-child(2) a:hover{color: #7ab1fe;}
+.nav ul li:nth-child(3) a{
+    color: white;
+    background-color: #a7aab2;
+    padding: 4px;
+}
+.nav ul li:nth-child(3) a:hover{text-decoration: none}
+.nav ul li:nth-child(4) a{color: #404040;}
+.nav ul li:nth-child(4) a:hover{color: #7ab1fe;}
+.nav ul li:nth-child(5) a{
+    color: #404040;
+    margin: 0 30px 0 0;
+}
+.nav ul li:nth-child(5) a em{
+    width: 26px;
+    height: 30px;
+    float: left;
+    margin: 24px 10px 20px 30px;
+    background-position: -145px -654px;
+}
+
+/*刷新显示框*/
+.cover{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+.cover>div{
+    width: 540px;
+    height: 660px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -330px;
+    margin-left: -270px;
+    z-index: 101;
+    background: white;
+    box-shadow: 5px 5px 2px #aaa;
+    text-align: center;
+    padding: 40px;
+}
+.cover>div>span {
+    background-position: -72px -440px;
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin: 10px auto 20px;
+
+}
+.cover>div>h3{
+    font-weight: normal;
+    line-height: 40px;
+}
+.cover>div>p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 40px;
+    color: #8b8b99;
+}
+.cover>div>img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.cover>div>a {
+    width: 150px;
+    height: 32px;
+    display: inline-block;
+    background: white;
+    border: 1px solid #e6e6ea;
+    color: #555;
+    line-height: 32px;
+}
+.cover>div>b {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-position: -23px -243.5px;
+    background-color: #fdfdfe;
+}

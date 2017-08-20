@@ -1,0 +1,87 @@
+header {
+    background: url("../img/login_banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 130px;
+}
+header a{
+    background: url("../img/sprites2x.png") no-repeat;
+    display: block;
+    width: 160px;
+    height: 70px;
+    margin: 30px 0 0;
+    background-size: 400px;
+}
+.reg-text{
+    margin: 7rem auto 3rem;
+}
+.reg-text .reg-form{
+    border: 1px solid #e6e6ea;
+    overflow: hidden;
+
+}
+.reg-form h4{
+    line-height: 5rem;
+    height: 5rem;
+    border-bottom: 1px solid #e6e6ea;
+    width: 110%;
+    text-indent: 2rem;
+    margin: 0 0 10px -15px;
+}
+.reg-form p{
+    padding: 5px;
+    line-height: 3rem;
+}
+.reg-form .form-control {
+    border-radius: 0px;
+    border: 1px solid #e6e6ea;
+}
+.reg-form .btn-default {
+    border-radius: 0px;
+    background: #a7aab2;
+    color: white;
+}
+.reg-form .btn-success {
+    border-radius: 0px;
+    background: #14cb76;
+    color: white;
+}
+.reg-text .col-md-7{
+    color: #9898b2;
+    position: relative;
+}
+.reg-text .col-md-7 h3{
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    margin-left: -10rem;
+}
+.reg-text .col-md-7 h5{
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    margin-left: -15rem;
+}
+footer{
+    color: #8b8b8b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.xiey h3{
+    margin-top: 40px;
+}
+.xiey p{
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

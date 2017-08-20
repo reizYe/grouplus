@@ -1,0 +1,52 @@
+section{
+    width: 100%;
+    padding: 120px 0 0 240px;
+}
+#act{
+    width: 96%;
+    background: #fdfdfe;
+    border: 1px solid #e6e6ea;
+}
+#act>h4{
+    font-weight: normal;
+    padding: 30px 30px 10px 30px;
+    font-size: 16px;
+}
+#act .step{
+    width: 100%;
+    padding: 10px 30px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #e6e6ea;
+    list-style: none;
+    color: #8b8b8b;
+}
+#act .step li{
+    padding: 0 0 8px 0;
+    margin: 0 50px 0 0;
+    display: inline-block;
+    position: relative;
+}
+#act .step li.active{
+    border-bottom: 3px solid #14cb76;
+    color: #404040;
+}
+#act .step li>i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -45px;
+    top: 0px;
+    background-position: -77px -302px;
+}
+
+
+
+
+
+
+
+
+
+
+

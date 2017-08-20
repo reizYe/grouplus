@@ -1,0 +1,110 @@
+body{
+    background-color:#F7F7F7;
+}
+
+#infos .container{
+    position:relative;
+    left:100px;
+}
+
+#infos .wrap{
+
+    position:relative;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px #EBEDF2;
+    background-color:white;
+    width:490px;
+    margin-right:10px;
+
+}
+
+#infos .wrap a img{
+    width:490px;
+    position:relative;
+    right:16px;
+    border-radius: 10px 10px 0 0;
+}
+
+#infos .wrap:hover{
+    box-shadow: -10px 10px 10px #EBEDF2;
+}
+
+#infos .caption p span{
+    display:inline-block;
+    width:45px;
+    height:25px;
+    background:url("../img/sprites2x.png") no-repeat -485px 0px;
+}
+
+#infos .p1{
+    /*position:absolute;*/
+    left:-20px;
+    bottom:0px;
+}
+
+#infos .p2{
+    position:absolute;
+    right:15px;
+    bottom:0px;
+}
+
+#infos .row img{
+    width:482px;
+    height:200px;
+}
+
+#infos .yema{
+    margin:10px;
+    position:relative;
+    bottom:5px;
+}
+
+#infos .pager{
+    position:relative;
+    right:200px;
+}
+
+#infos .form{
+    float:right;
+    position:relative;
+    bottom:55px;
+    right:100px;
+}
+
+#infos #int{
+    margin-left:-15px;
+    display:inline-block;
+    width:44px;
+    height:24px;
+    background-color:#14CC76;
+    color:white;
+    text-align:center;
+    line-height:24px;
+    position:relative;
+
+}
+
+#infos .int{
+    display:inline-block;
+    border:1px solid #ECF2F5;
+
+}
+
+#infos .zaixianzixun img{
+    width:50%;
+    height:50%;
+}
+
+#infos #top{
+    position:fixed;
+    right:-66px;
+    bottom:20px;
+}
+#infos #top img{
+    width:50%;
+    height:50%;
+}
+
+#infos .caption{
+    width: 490px;
+}

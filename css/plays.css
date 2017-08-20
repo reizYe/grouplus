@@ -1,0 +1,111 @@
+body{
+    background-color:#F7F7F7;
+}
+
+.wrap{
+
+    position:relative;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px #EBEDF2;
+}
+
+.wrap img{
+    width:380px;
+    position:relative;
+    right:15px;
+    top:5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.wrap:hover{
+    box-shadow: -10px 10px 10px #EBEDF2;
+}
+
+.caption p span{
+    display:inline-block;
+    width:45px;
+    height:25px;
+    background:url("img/sprites2x.png") no-repeat -485px 0;
+}
+
+.p1{
+    position:absolute;
+    left:10px;
+    bottom:0;
+}
+
+.p2{
+    position:absolute;
+    right:12px;
+    bottom:0;
+}
+
+.yema{
+    margin:10px;
+    position:relative;
+    bottom:5px;
+}
+
+.pager{
+    position:relative;
+    right:100px;
+}
+
+.form{
+    float:right;
+    position:relative;
+    bottom:55px;
+}
+
+#int{
+    margin-left:-15px;
+    display:inline-block;
+    width:44px;
+    height:24px;
+    background-color:#14CC76;
+    color:white;
+    text-align:center;
+    line-height:24px;
+    position:relative;
+
+}
+
+.int{
+    display:inline-block;
+    border:1px solid #ECF2F5;
+
+}
+
+.zaixianzixun{
+    position:fixed;
+    right:-36px;
+    bottom:200px;
+}
+
+.zaixianzixun img{
+    width:50%;
+    height:50%;
+}
+
+#top{
+    position:fixed;
+    right:-66px;
+    bottom:20px;
+}
+#top img{
+    width:50%;
+    height:50%;
+}
+
+.wanfa{
+    width:80px;
+    height:30px;
+    background:rgba(1,1,1,0.7);
+    border-radius: 3px;
+    position:absolute;
+    left:20px;
+    top:10px;
+    color:white;
+    text-align:center;
+    line-height:30px;
+}

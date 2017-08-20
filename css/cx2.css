@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+body{font-size: 14px;
+    font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', '\9ED1\4F53', Arial, sans-serif, sans-serif;
+    color: #666;
+    line-height: 22px;}

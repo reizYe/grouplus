@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.btn_effects {
+  background: -webkit-linear-gradient(left, #00dc88, #00be4e);
+  background: -o-linear-gradient(right, #00dc88, #00be4e);
+  background: -moz-linear-gradient(right, #00dc88, #00be4e);
+  background: linear-gradient(to right, #00dc88, #00be4e); }
+
+/* Scss Document */
+/* cssReset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, button, textarea {
+  margin: 0;
+  padding: 0; }
+
+img, table, form, iframe, fieldset {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ul li {
+  list-style-type: none; }
+
+body {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', '\9ED1\4F53', Arial, sans-serif, sans-serif;
+  color: #666;
+  line-height: 22px;
+  background: #f7f7f7; }
+
+a {
+  color: #036;
+  text-decoration: none; }
+
+a:hover {
+  color: #f00;
+  text-decoration: none; }
+
+a:focus {
+  outline-style: none; }
+
+.cl {
+  clear: both;
+  line-height: 1px;
+  height: 0;
+  font-size: 1px;
+  overflow: hidden; }
+
+:focus {
+  outline-style: none; }
+
+cite {
+  font-style: normal; }
+
+.error {
+  color: #fc5353; }
+
+em, i, var {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a, input, textarea {
+  -webkit-tap-highlight-color: transparent; }
+
+input, input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input::-webkit-textfield-decoration-container {
+  background-color: #fff; }
+
+input:focus:-moz-placeholder {
+  color: #fff; }
+
+input:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff; }
+
+input:focus::-webkit-input-placeholder {
+  color: #fff; }
+
+textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+textarea::-webkit-textfield-decoration-container {
+  background-color: #fff; }
+
+textarea:focus:-moz-placeholder {
+  color: #fff; }
+
+textarea:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff; }
+
+textarea:focus::-webkit-input-placeholder {
+  color: #fff; }
+
+/*Start 初始化样式 */
+/* layout */
+.layout {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.none {
+  display: none; }
+
+.p_fixed {
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  background: #fff; }
+
+/*End 初始化样式 */
+/*strat 暂无数据*/
+.no_data {
+  text-align: center !important;
+  width: 100%;
+  margin: 45% 0px;
+  font: 16px/35px "微软雅黑";
+  color: #585858;
+  position: relative;
+  overflow: hidden; }
+
+.verticalalign {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  margin-left: -1px; }
+
+.bottom60 {
+  margin-bottom: 60px; }

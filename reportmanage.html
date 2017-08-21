@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="css/Console-index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reportmanage.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/Console-index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!--侧边栏-->
+    <aside id="console-list">
+        <div><span class="icon"></span></div>
+        <ul>
+            <li class="selected"><a href="#"><span></span>工作台</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>活动管理</a></li>
+            <li><a href="#"><span></span>报名表管理</a></li>
+            <li><a href="#"><span></span>问卷管理</a></li>
+            <li><a href="#"><span></span>打赏管理</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>会员招募</a></li>
+            <li><a href="#"><span></span>会员管理</a></li>
+            <li><a href="#"><span></span>群组管理</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>收入管理</a></li>
+            <li><a href="#"><span></span>账号设置</a></li>
+            <li><a href="#"><span></span>操作日志</a></li>
+        </ul>
+    </aside>
+
+    <!--顶部菜单-->
+    <nav class="nav">
+        <h1>后台管理系统</h1>
+        <ul>
+            <li><a href="#">立即注册</a></li>
+            <li><a href="#"><span class="icon"></span><i class="icon"></i>DEMO测试帐号</a></li>
+            <li><a href="#">未认证</a></li> |
+            <li><a href="#">退出</a></li>
+            <li><a href="#"><em class="icon"></em>通知中心</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <div class="main-container">
+            <div class="table-head">
+                <div class="headtext">问卷列表</div>
+                <button class="btn btn-success"><em class="sprites2x-report"></em>回收站(<em>21</em>)</button>
+            </div>
+            <div class=" table-body table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>标题</th>
+                            <th>发布时间</th>
+                            <th>状态</th>
+                            <th>浏览数</th>
+                            <th>新增反馈数</th>
+                            <th>总反馈数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/36181">旅游问卷</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-25 14:50</span></td>
+                            <td class="div_2"><span>已结束</span></td>
+                            <td class="div_3"><span>3</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>1</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/36181">管理</a><a actid="36181" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/35495">需求调研表</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-18 11:07</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>5</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>0</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/35495">管理</a><a actid="35495" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/35277">1111111</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-14 15:31</span></td>
+                            <td class="div_2"><span>已结束</span></td>
+                            <td class="div_3"><span>0</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>0</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/35277">管理</a><a actid="35277" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/34968">轮胎被扎统一收集表单</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-11 10:57</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>17</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>0</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/34968">管理</a><a actid="34968" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/34695">测试一下</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-07 16:02</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>5</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>1</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/34695">管理</a><a actid="34695" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/34661">周末去哪玩</a></strong></span></td>
+                            <td class="div_1"><span>2017-07-07 11:33</span></td>
+                            <td class="div_2"><span>已结束</span></td>
+                            <td class="div_3"><span>2</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>1</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/34661">管理</a><a actid="34661" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/33316">请问对本节课满意吗</a></strong></span></td>
+                            <td class="div_1"><span>2017-06-20 00:09</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>6</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>0</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/33316">管理</a><a actid="33316" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/31314">[健身帮帮忙]Kevin教练健身讲座内容大征集</a></strong></span></td>
+                            <td class="div_1"><span>2017-05-25 16:59</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>33</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>6</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/31314">管理</a><a actid="31314" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/30331">最近最想看的是什么东东</a></strong></span></td>
+                            <td class="div_1"><span>2017-05-14 21:03</span></td>
+                            <td class="div_2"><span>已结束</span></td>
+                            <td class="div_3"><span>3</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>1</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/30331">管理</a><a actid="30331" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                        <tr class="table-tr table-last">
+                            <td class="div_0"><span><strong><a href="/questionnaire/detail/29532">32</a></strong></span></td>
+                            <td class="div_1"><span>2017-05-05 19:17</span></td>
+                            <td class="div_2"><span>进行中</span></td>
+                            <td class="div_3"><span>5</span></td>
+                            <td class="div_4"><span>0</span></td>
+                            <td class="div_5"><span>1</span></td>
+                            <td class="div_6"><span><a href="/questionnaire/detail/29532">管理</a><a actid="29532" href="javascript:void(0)" class="del deletess">删除</a></span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="">
+                    <div class="left-foot">共<strong>25</strong>条记录, 每页显示
+                        <select>
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="80">80</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </select>条
+                    </div>
+                    <div class="right-foot">
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li class=""><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="table-foot">-->
+            <!--<tfoot>-->
+            <!--<div class="left-foot">共<strong>64</strong>条记录, 每页显示<select>-->
+            <!--<option value="5">5</option>-->
+            <!--<option value="10" selected>10</option>-->
+            <!--<option value="15">15</option>-->
+            <!--<option value="20">20</option>-->
+            <!--<option value="30">30</option>-->
+            <!--<option value="50">50</option>-->
+            <!--<option value="80">80</option>-->
+            <!--<option value="100">100</option>-->
+            <!--<option value="200">200</option>-->
+            <!--</select>条</div>-->
+            <!--<div class="right-foot">-->
+            <!--<ul class="pagination">-->
+            <!--<li><a href="#">&laquo;</a></li>-->
+            <!--<li class="active"><a href="#">1</a></li>-->
+            <!--<li class="disabled"><a href="#">2</a></li>-->
+            <!--<li><a href="#">3</a></li>-->
+            <!--<li><a href="#">4</a></li>-->
+            <!--<li><a href="#">5</a></li>-->
+            <!--<li><a href="#">&raquo;</a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</tfoot>-->
+            <!--</div>-->
+        </div>
+
+    </section>
+    <!--刷新显示框-->
+    <!--<div class="cover">-->
+    <!--<div>-->
+    <!--<span class="icon"></span>-->
+    <!--<h3>产品体验提示</h3>-->
+    <!--<p>1. “DEMO账号设置”，已认证为八零年代青商汇组织账号，不可更改；</p>-->
+    <!--<p>2、请勿用该体验账号发布正式活动；</p>-->
+    <!--<p>3、体验账号绑定的银行卡为青商汇银行卡，无法对外提现；</p>-->
+    <!--<img src="img/code_qch.png" alt="">-->
+    <!--<br>-->
+    <!--<a href="javascript:;" id="turnOff1">我已阅读并知晓</a>-->
+    <!--<b class="icon" id="turnOff2"></b>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+</body>
+
+</html>

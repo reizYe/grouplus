@@ -202,9 +202,9 @@ footer {
         /*float: left;*/
         /*width: 40%;*/
     /*}*/
-    .carousel-indicators{
+    /* .carousel-indicators{ */
         /*bottom: 280px;*/
-    }
+    /* } */
     /*.contacttype {*/
         /*width: 90%;*/
         /*text-align: right;*/
@@ -230,7 +230,7 @@ footer {
         float: left;
         line-height: 44px;
         margin: 0px;
-        padding: 0;
+        padding: 0 15px;
         background: #fff;
     }
    .flexslider .carousel-inner{

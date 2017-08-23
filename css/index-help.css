@@ -21,7 +21,7 @@ a:hover {
 }
 
 .nav-logo {
-    float: left;
+    /* float: left; */
     overflow: hidden;
     position: relative;
     width: 120px;

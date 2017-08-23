@@ -43,7 +43,7 @@ body{color: #404040;background-color: #f5f5f7}
     height: 75px;
     display: inline-block;
     background-position: -245px -164px;
-    float: left;
+    /* float: left; */
     margin: -10px 10px 0 0;
 }
 #sec>div>a>h4{

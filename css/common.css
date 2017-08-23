@@ -15,7 +15,7 @@ a:hover {
     background-repeat: no-repeat;
 }
 .nav-logo {
-    float: left;
+    /* float: left; */
     overflow: hidden;
     position: relative;
     width: 120px;

@@ -14,7 +14,8 @@ while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
   $outp .= '"newtickling":"'  . $rs["newtickling"]    . '",';
   $outp .= '"alltickling":"'. $rs["alltickling"]   . '"}';
 }
-$outp ='{"report_data":['.$outp.']}';
+// $outp ='{"report_data":['.$outp.']}';
+$outp ='['.$outp.']';
 $conn->close();
 echo($outp);
 ?>

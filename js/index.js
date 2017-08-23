@@ -23,9 +23,9 @@ $(function () {
         // }
   
 );
-    var itemOffsetTop = $("#myTargetElement").offset().top;
-    var itemOuterHeight = $("#myTargetElement").outerHeight();
-    var winHeight = $(window).height();
+    // var itemOffsetTop = $("#myTargetElement").offset().top;
+    // var itemOuterHeight = $("#myTargetElement").outerHeight();
+    // var winHeight = $(window).height();
     // $(window).scroll(function () {
     //     var winScrollTop = $(window).scrollTop();
     //     if(!(winScrollTop > itemOffsetTop+itemOuterHeight) && !(winScrollTop < itemOffsetTop-winHeight)) {

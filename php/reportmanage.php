@@ -18,4 +18,5 @@ while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
 $outp ='['.$outp.']';
 $conn->close();
 echo($outp);
+// echo($rs['time']);
 ?>

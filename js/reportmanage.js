@@ -31,7 +31,7 @@ $(function () {
                         '<td><span>' + item['status'] + '</span></td>' +
                         '<td><span>' + item['read'] + '</span></td>' +
                         '<td><span>' + item['newtickling'] + '</span></td>' +
-                        '<td><span>' + item['alltickling'] + '</span></td>' +
+                        '<td><span>' + item['alltickling'] + '</span><span class="myid">' + item['Id'] + '</span></td>' +
                         '<td><span><a>' + '管理' + '</a> &nbsp;' + '<a class="delete">' + '删除' + '</a></span></td>' +
                         '</tr>';
                     if (index == number) {
@@ -46,23 +46,18 @@ $(function () {
             });
             promise.always(function(){
                 $('.delete').on('click', function () {
-                    console.log(123);
+                    alert(this);
                 })
             });
     
-        // $.when(promise()).done($('.delete').on('click',function(){
-        //     console.log(123);
-        // })) 
-    };
- 
+    }
+    
     $('.left-foot>select').change(function () {
         var num = $('.left-foot>select').val() - 1;
         $('tbody').empty();
         update(num);
     });
-    // $(".delete").promise().done($("tbody>tr").on('click', function () {
-    //     console.log(111);
-    // }));
+
     update(9);
 });
     

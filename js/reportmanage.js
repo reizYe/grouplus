@@ -6,9 +6,6 @@ $(function () {
     $(document).ajaxComplete(function () {
         $('.loader').css('display', 'none');
     });
-    // $.ajaxSetup({
-    //     cache: false
-    // });
     //加载数据请求
     update = function (num) {
         var html = "";
@@ -97,22 +94,39 @@ $(function () {
 
     update(9);
 });
+//防止重复提交
+// var pendingRequests = {};
+// $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+//     var key = options.url;
+//     console.log(key);
+//     if (!pendingRequests[key]) {
+//         pendingRequests[key] = jqXHR;
+//     } else {
+//         //jqXHR.abort(); //放弃后触发的提交
+//         pendingRequests[key].abort(); // 放弃先触发的提交
+//     }
+//     var complete = options.complete;
+//     options.complete = function (jqXHR, textStatus) {
+//         pendingRequests[key] = null;
+//         if (jQuery.isFunction(complete)) {
+//             complete.apply(this, arguments);
+//         }
+//     };
+// });
 
-var pendingRequests = {};
-$.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-    var key = options.url;
-    console.log(key);
-    if (!pendingRequests[key]) {
-        pendingRequests[key] = jqXHR;
-    } else {
-        //jqXHR.abort(); //放弃后触发的提交
-        pendingRequests[key].abort(); // 放弃先触发的提交
-    }
-    var complete = options.complete;
-    options.complete = function (jqXHR, textStatus) {
-        pendingRequests[key] = null;
-        if (jQuery.isFunction(complete)) {
-            complete.apply(this, arguments);
-        }
-    };
-});
+
+// ajax 线性
+// var promise1 = $.ajax(url1);
+// var promise2 = promise1.then(function (data) {
+//     return $.ajax(url2, {
+//         "data": data
+//     });
+// });
+// var promise3 = promise2.then(function (data) {
+//     return $.ajax(url3, {
+//         "data": data
+//     });
+// });
+// promise3.done(function (data) {
+//     // data retrieved from url3  
+// });

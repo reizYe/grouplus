@@ -20,18 +20,7 @@ $(function () {
             cache: false,
             dataType: 'json'
         });
-        // var deletepromise = $.ajax({
-        //     type: "post",
-        //     url: "php/reportdelete.php",
-        //     data: {
-        //         "deleteid": delnum
-        //     },
-        //     dataType: "json",
-        // });
-        // beforeSend:function(){
-        //     $(".delete").attr('onclick', 'javascript:void();');
-        // },
-        getdatapromise.done(function (data) {
+        getdatapromise.then(function (data) {
             $.each(data, function (index, item) {
                 int++;
                 html += '<tr>' +
@@ -49,41 +38,32 @@ $(function () {
             });
             $('tbody').append(html);
             $('.left-foot>span').text(int);
-        });
-        getdatapromise.fail(function () {
+        }, function () {
             $('tbody').append('请求数据失败,请重试!');
         });
-        getdatapromise.done(function () {
-            $('.delete').on('click', function (e) {
+        var deletepromise = getdatapromise.then(function (data) {
+            $('.delete').on('click', function () {
                 int--;
                 $('.left-foot>span').text(int);
                 $('.btn-success>em:last').text(parseInt($('.btn-success>em:last').text()) + 1);
                 var delnum = $(this).parents("td").prev().children(".myid").html();
                 $(this).parents("tr").remove();
-                // var deletepromise = $.ajax({
-                //     type: "post",
-                //     url: "php/reportdelete.php",
-                //     data: {
-                //         'deleteid': delnum
-                //     }
-                //     // dataType: "json",
-                // });
-                $.when($.ajax({
-                        type: "post",
-                        url: "php/reportdelete.php",
-                        data: {
-                            'deleteid': delnum
-                        },
-                        dataType: "text",
-                    }))
-                    .done(function (data) {
-                        alert(data + '123');
-                    }).fail(function (data) {
-                        alert(data);
-                    });
+                return $.ajax({
+                    type: "post",
+                    url: "php/reportdelete.php",
+                    data: {
+                        'deleteid': delnum
+                    },
+                    dataType: "text",
+                });
             })
         });
-
+        // deletepromise.then(function (data) {
+        //         console.log(data + '123');
+        //     },
+        //     function (data) {
+        //         alert(data);
+        //     })
     };
 
     $('.left-foot>select').change(function () {

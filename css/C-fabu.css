@@ -39,6 +39,25 @@ section{
     top: 0px;
     background-position: -77px -302px;
 }
+.act_content textarea {
+    width: 60%;
+    height: 120px;
+    border: 1px solid #e6e6ea;
+}
+
+.act_content>div.effect {
+    width: 400px;
+}
+
+.act_content>div.effect>img {
+    width: 300px;
+}
+
+.act_content>div.effect>button {
+    float: right;
+    margin: -15rem 0;
+}
+
 
 
 

@@ -1,101 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>发布活动</title>
-    <link rel="stylesheet" href="css/Console-index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/Console-index.css">
     <link rel="stylesheet" href="css/C-report.css">
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="js/report.js"></script>
 </head>
+
 <body>
-<!--侧边栏-->
+    <!--侧边栏-->
     <aside id="console-list">
-    <div><span class="icon"></span></div>
-    <ul>
-        <li class="selected"><a href="#"><span></span>工作台</a></li>
-        <li class="line"></li>
-        <li><a href="#"><span></span>活动管理</a></li>
-        <li><a href="#"><span></span>报名表管理</a></li>
-        <li><a href="#"><span></span>问卷管理</a></li>
-        <li><a href="#"><span></span>打赏管理</a></li>
-        <li class="line"></li>
-        <li><a href="#"><span></span>会员招募</a></li>
-        <li><a href="#"><span></span>会员管理</a></li>
-        <li><a href="#"><span></span>群组管理</a></li>
-        <li class="line"></li>
-        <li><a href="#"><span></span>收入管理</a></li>
-        <li><a href="#"><span></span>账号设置</a></li>
-        <li><a href="#"><span></span>操作日志</a></li>
-    </ul>
-</aside>
+        <div><span class="icon"></span></div>
+        <ul>
+            <li class="selected"><a href="#"><span></span>工作台</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>活动管理</a></li>
+            <li><a href="#"><span></span>报名表管理</a></li>
+            <li><a href="#"><span></span>问卷管理</a></li>
+            <li><a href="#"><span></span>打赏管理</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>会员招募</a></li>
+            <li><a href="#"><span></span>会员管理</a></li>
+            <li><a href="#"><span></span>群组管理</a></li>
+            <li class="line"></li>
+            <li><a href="#"><span></span>收入管理</a></li>
+            <li><a href="#"><span></span>账号设置</a></li>
+            <li><a href="#"><span></span>操作日志</a></li>
+        </ul>
+    </aside>
 
-<!--顶部菜单-->
+    <!--顶部菜单-->
     <nav class="nav">
-    <h1>后台管理系统</h1>
-    <ul>
-        <li><a href="#">立即注册</a></li>
-        <li><a href="#"><span class="icon"></span><i class="icon"></i>DEMO测试帐号</a></li>
-        <li><a href="#">未认证</a></li> |
-        <li><a href="#">退出</a></li>
-        <li><a href="#"><em class="icon"></em>通知中心</a></li>
-    </ul>
-</nav>
+        <h1>后台管理系统</h1>
+        <ul>
+            <li><a href="#">立即注册</a></li>
+            <li><a href="#"><span class="icon"></span><i class="icon"></i>DEMO测试帐号</a></li>
+            <li><a href="#">未认证</a></li> |
+            <li><a href="#">退出</a></li>
+            <li><a href="#"><em class="icon"></em>通知中心</a></li>
+        </ul>
+    </nav>
 
-<!--内容开始-->
+    <!--内容开始-->
     <section>
         <div id="act">
-            <!--内容部分-S3-->
-            <div class="act_content none">
-                <h5><i></i> &nbsp;&nbsp;设置报名表</h5>
-                <input type="checkbox" checked disabled="disabled">必填&nbsp;姓名
-                <input type="text" class="six">
-                <br>
-                <input type="checkbox" checked disabled="disabled">必填&nbsp;手机号码
-                <input type="text" class="six"> <br>
-                <a href="javascript:;">添加更多</a>
+            <h5>发报名表</h5>
+            <div class="act_content">
+                <div id="userinfo">
+                    <h4><span class="blockpadding"></span> &nbsp;设置报名表</h4>
+                    <span class="fixedinfo"><input type="checkbox" checked disabled="disabled">必填&nbsp;<b>姓名</b></span>
+                    <input type="text" class="six"><br>
+                    <span class="fixedinfo"><input type="checkbox" checked disabled="disabled">必填&nbsp;<b>手机号码</b></span>
+                    <input type="text" class="six"> <br>
+                </div>
+                <button class="btn btn-default">加载更多</button>
+                <div class="addform">
+                    <p>联系人项:</p>
+                    <span>邮箱</span>
+                    <span>微信</span>
+                    <span>性别</span>
+                    <span>收货地址</span>
+                </div>
             </div>
             <!-- 日期控件 -->
-            <span class="blockpadding"></span> <span>基本信息</span>
-            <p>标题<span class="red">*</span></p>
-            <input type="text" name="" id="">
-            <span> <span>0</span>/<span>64</span></span>
-            <p>活动时间<span class="red">*</span></p>
-            <input type="text" class="form-control Day" id="startTime1" data-date-formats="yyyy-MM-dd" placeholder="活动开始日期" size="16">
-            <input type="text" class="form-control Time" id="startTime2" data-date-formats="hh:mm:ss" placeholder="活动开始时间" size="16">
-            <input type="text" class="form-control Day" id="endTime1" data-date-formats="yyyy-MM-dd" placeholder="活动结束日期" size="16">
-            <input type="text" class="form-control Time" id="endTime2" data-date-formats="hh:mm:ss" placeholder="活动结束时间" size="16">
-            <p>报名时间<span class="red">*</span></p>
-            <input type="text" class="form-control Day" id="startReg1" data-date-formats="yyyy-MM-dd" placeholder="报名开始日期" size="16">
-            <input type="text" class="form-control Time" id="startReg2" data-date-formats="hh:mm:ss" placeholder="报名开始时间" size="16">
-            <input type="text" class="form-control Day" id="endReg1" data-date-formats="yyyy-MM-dd" placeholder="报名结束日期" size="16">
-            <input type="text" class="form-control Time" id="endReg2" data-date-formats="hh:mm:ss" placeholder="报名结束时间" size="16">
-        </div>
-        <!-- form  -->
-        <div class="act_content none">
-            <h5><i></i> &nbsp;&nbsp;售票信息</h5>
-            <p>售票类型</p>
-            <input type="radio" id="sell_1" name="actradio1"><label for="sell_1">免费</label>
-            <input type="radio" id="sell_2" name="actradio1"><label for="sell_2">收费（可设置多种票）</label>
-            <p>报名限制</p>
-            <input type="radio" id="sell_3" name="actradio2"><label for="sell_3">不限制</label>
-            <input type="radio" id="sell_4" name="actradio2"><label for="sell_4">每人限报一次</label>
-            <p>余票显示</p>
-            <input type="radio" id="sell_5" name="actradio3"><label for="sell_5">显示余票</label>
-            <input type="radio" id="sell_6" name="actradio3"><label for="sell_6">不显示余票</label>
-            <p>人数限制</p>
-            <input type="radio" id="sell_7" name="actradio4"><label for="sell_7">不限制</label>
-            <input type="radio" id="sell_8" name="actradio4"><label for="sell_8">限制</label>
-            <input type="text" placeholder="0">
-            <p>是否需要审核</p>
-            <input type="radio" name="actradio5" id="sell_9"><label for="sell_9">不需要</label>
-            <input type="radio" name="actradio5" id="sell_10"><label for="sell_10">需要</label>
-            <p>仅限会员<span>还没有会员?马上招募</span></p>
-            <input type="radio" id="sell_11" name="actradio6"><label for="sell_11">不限制</label>
-            <input type="radio" id="sell_12" name="actradio6"><label for="sell_12">限制</label>
+            <div class="act_content">
+                <span class="blockpadding"></span> <span>基本信息</span>
+                <p>标题<span class="red">*</span></p>
+                <input type="text" name="" id="">
+                <span> <span>0</span>/<span>64</span></span>
+                <p>活动时间<span class="red">*</span></p>
+                <input type="text" class="form-control Day" id="startTime1" data-date-formats="yyyy-MM-dd" placeholder="活动开始日期" size="16">
+                <input type="text" class="form-control Time" id="startTime2" data-date-formats="hh:mm:ss" placeholder="活动开始时间" size="16">
+                <input type="text" class="form-control Day" id="endTime1" data-date-formats="yyyy-MM-dd" placeholder="活动结束日期" size="16">
+                <input type="text" class="form-control Time" id="endTime2" data-date-formats="hh:mm:ss" placeholder="活动结束时间" size="16">
+                <p>报名时间<span class="red">*</span></p>
+                <input type="text" class="form-control Day" id="startReg1" data-date-formats="yyyy-MM-dd" placeholder="报名开始日期" size="16">
+                <input type="text" class="form-control Time" id="startReg2" data-date-formats="hh:mm:ss" placeholder="报名开始时间" size="16">
+                <input type="text" class="form-control Day" id="endReg1" data-date-formats="yyyy-MM-dd" placeholder="报名结束日期" size="16">
+                <input type="text" class="form-control Time" id="endReg2" data-date-formats="hh:mm:ss" placeholder="报名结束时间" size="16">
+            </div>
+
+            <!-- form  -->
+            <div class="act_content">
+                <h5><span class="blockpadding"></span> &nbsp;&nbsp;售票信息</h5>
+                <p>售票类型</p>
+                <input type="radio" id="sell_1" name="actradio1" checked><label for="sell_1"><span class="checkedspan"></span><span class="unchecked"></span> 免费</label>
+                <input type="radio" id="sell_2" name="actradio1"><label for="sell_2">收费（可设置多种票）</label>
+                <p>报名限制</p>
+                <input type="radio" id="sell_3" name="actradio2" checked><label for="sell_3">不限制</label>
+                <input type="radio" id="sell_4" name="actradio2"><label for="sell_4">每人限报一次</label>
+                <p>余票显示</p>
+                <input type="radio" id="sell_5" name="actradio3" checked><label for="sell_5">显示余票</label>
+                <input type="radio" id="sell_6" name="actradio3"><label for="sell_6">不显示余票</label>
+                <p>人数限制</p>
+                <input type="radio" id="sell_7" name="actradio4" checked><label for="sell_7">不限制</label>
+                <input type="radio" id="sell_8" name="actradio4"><label for="sell_8">限制</label>
+                <input type="text" placeholder="0">
+                <p>是否需要审核</p>
+                <input type="radio" name="actradio5" id="sell_9" checked><label for="sell_9">不需要</label>
+                <input type="radio" name="actradio5" id="sell_10"><label for="sell_10">需要</label>
+                <p>仅限会员<span>&nbsp;&nbsp;还没有会员?马上招募</span></p>
+                <input type="radio" id="sell_11" name="actradio6" checked><label for="sell_11">不限制</label>
+                <input type="radio" id="sell_12" name="actradio6"><label for="sell_12">限制</label>
+            </div>
         </div>
     </section>
+    <section>
+        <div><button type="submit">发布</button></div>
+    </section>
 </body>
+
 </html>

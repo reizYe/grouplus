@@ -89,6 +89,7 @@ body{color: #404040;background-color: #f5f5f7}
     top: 0;
     background: #fdfdfe;
     border-bottom: 1px solid #e6e6ea;
+    z-index: 9;
 }
 .nav>h1{
     float: left;

@@ -1,6 +1,54 @@
+.red {
+    color: red;
+}
+
+.grey {
+    color: grey;
+}
+
+label {
+    margin: 0 20px 0 0;
+}
+
+.none {
+    display: none;
+}
+.act_content {
+    padding: 0 0px 40px;
+    position: relative;
+}
+
+.act_content>h5 {
+    padding: 40px 0 0;
+    font-size: 16px;
+}
+
+.act_content>p {
+    padding: 20px 0 10px 0;
+    font-size: 16px;
+}
+p {
+    margin: 0 0 10px;
+}
+label {
+    margin: 0 20px 0 0;
+}
 section{
     width: 100%;
     padding: 120px 0 0 240px;
+}
+@media (max-width: 1200px){
+        /* #console-list {
+        position: fixed;
+        left: -220px;
+        top: 0;
+        z-index: 9999991;
+    } */
+}  
+.act_content .form-control {
+    width: 14%;
+    display: inline;
+    margin: 0 1% 0 0;
 }
 #act{
     width: 96%;
@@ -23,7 +71,76 @@ section{
     font-size: 20px;
     font-weight: bolder;
 }
+.act_content textarea {
+    width: 60%;
+    height: 120px;
+    border: 1px solid #e6e6ea;
+}
 
+.act_content>div.effect {
+    width: 400px;
+}
+
+.act_content>div.effect>img {
+    width: 300px;
+}
+
+.act_content>div.effect>button {
+    float: right;
+    margin: -15rem 0;
+}
+.act_content>h4,#userinfo>h4{
+    margin: 25px 0;
+}
+.six{
+    margin-left: 10px;
+    width: 50%;
+}
+.fixedinfo{
+    /* padding-left: 25px; */
+    position: relative;
+    width: 140px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.btn-default{
+    border-style: dashed;
+    width: 65%;
+    color: #0A7ED3;
+}
+.addform{
+    border: 1px dashed #D9D9D9;
+    margin-top: 10px;
+    display: none;
+}
+.addform p{
+    margin: 10px;
+}
+.addform span{
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #D9D9D9;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.addform>span:hover{
+    cursor: pointer;
+}
+/* input[type="radio"]{
+    opacity: 0;
+}
+.checkedspan{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: (70, 227, 0);
+} */
 
 
 

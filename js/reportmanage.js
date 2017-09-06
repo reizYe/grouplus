@@ -30,7 +30,7 @@ $(function () {
                     '<td><span>' + item['read'] + '</span></td>' +
                     '<td><span>' + item['newtickling'] + '</span></td>' +
                     '<td><span>' + item['alltickling'] + '</span><span class="myid">' + item['id'] + '</span></td>' +
-                    '<td><span><a>' + '管理' + '</a> &nbsp;' + '<a class="delete">' + '删除' + '</a></span></td>' +
+                    '<td><span><a href="update.php?id="' + item['id'] + '>' + '管理' + '</a> &nbsp;' + '<a class="delete">' + '删除' + '</a></span></td>' +
                     '</tr>';
                 if (index == number) {
                     return false;
@@ -42,13 +42,13 @@ $(function () {
             $('tbody').append('请求数据失败,请重试!');
         });
         var deletepromise = getdatapromise.then(function (data) {
-            $('.delete').on('click', function () {
+              $('.delete').on('click', function () {
                 int--;
                 $('.left-foot>span').text(int);
                 $('.btn-success>em:last').text(parseInt($('.btn-success>em:last').text()) + 1);
                 var delnum = $(this).parents("td").prev().children(".myid").html();
                 $(this).parents("tr").remove();
-                return $.ajax({
+                return  $.ajax({
                     type: "post",
                     url: "php/reportdelete.php",
                     data: {

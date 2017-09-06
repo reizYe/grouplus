@@ -9,8 +9,8 @@ while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
   $outp .= '{"id":"' . $rs["Id"] . '",';
   $outp .= '"title":"'  . $rs["title"]    . '",';
   $outp .= '"time":"'  . $rs["time"]    . '",';
-  $outp .= '"status":"'  . $rs["status"]    . '",';
-  $outp .= '"read":"'  . $rs["read"]    . '",';
+  $outp .= '"status":"'  . $rs["mystatus"]    . '",';
+  $outp .= '"read":"'  . $rs["readstatus"]    . '",';
   $outp .= '"newtickling":"'  . $rs["newtickling"]    . '",';
   $outp .= '"alltickling":"'. $rs["alltickling"]   . '"}';
 }

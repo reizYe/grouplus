@@ -55,6 +55,7 @@ section{
     background: #fdfdfe;
     border: 1px solid #e6e6ea;
     padding: 20px;
+    margin-bottom: 100px;
 }
 #act>p{
     font-size: 14px;
@@ -130,6 +131,17 @@ section{
 }
 .addform>span:hover{
     cursor: pointer;
+}
+footer{
+    position: fixed;
+    margin-top:30px; 
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: #fdfdfe;
+}
+.btn-success{
+    margin: 20px 260px;
 }
 /* input[type="radio"]{
     opacity: 0;

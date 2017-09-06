@@ -56,9 +56,9 @@
             <div class="act_content">
                 <div id="userinfo">
                     <h4><span class="blockpadding"></span> &nbsp;设置报名表</h4>
-                    <span class="fixedinfo"><input type="checkbox" checked disabled="disabled">必填&nbsp;<b>姓名</b></span>
+                    <span class="fixedinfo"><input type="checkbox" id="name" checked disabled="disabled">必填&nbsp;<b>姓名</b></span>
                     <input type="text" class="six"><br>
-                    <span class="fixedinfo"><input type="checkbox" checked disabled="disabled">必填&nbsp;<b>手机号码</b></span>
+                    <span class="fixedinfo"><input type="checkbox" id="phone" checked disabled="disabled">必填&nbsp;<b>手机号码</b></span>
                     <input type="text" class="six"> <br>
                 </div>
                 <button class="btn btn-default">加载更多</button>
@@ -74,8 +74,8 @@
             <div class="act_content">
                 <span class="blockpadding"></span> <span>基本信息</span>
                 <p>标题<span class="red">*</span></p>
-                <input type="text" name="" id="">
-                <span> <span>0</span>/<span>64</span></span>
+                <input type="text" name="" id="inputtitle" maxlength="64">
+                <span> <span id="totalnum">0</span>/<span>64</span></span>
                 <p>活动时间<span class="red">*</span></p>
                 <input type="text" class="form-control Day" id="startTime1" data-date-formats="yyyy-MM-dd" placeholder="活动开始日期" size="16">
                 <input type="text" class="form-control Time" id="startTime2" data-date-formats="hh:mm:ss" placeholder="活动开始时间" size="16">
@@ -113,9 +113,9 @@
             </div>
         </div>
     </section>
-    <section>
-        <div><button type="submit">发布</button></div>
-    </section>
+    <footer>
+        <button type="submit" class="btn btn-success">发布</button>
+    </footer>
 </body>
 
 </html>

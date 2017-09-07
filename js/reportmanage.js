@@ -30,8 +30,9 @@ $(function () {
                     '<td><span>' + item['read'] + '</span></td>' +
                     '<td><span>' + item['newtickling'] + '</span></td>' +
                     '<td><span>' + item['alltickling'] + '</span><span class="myid">' + item['id'] + '</span></td>' +
-                    '<td><span><a href="update.php?id="' + item['id'] + '>' + '管理' + '</a> &nbsp;' + '<a class="delete">' + '删除' + '</a></span></td>' +
+                    '<td><span><a href=php/myupdate.php?id=' + item['id'] + '>' + '管理' + '</a> &nbsp;' + '<a class="delete">' + '删除' + '</a></span></td>' +
                     '</tr>';
+                    // 
                 if (index == number) {
                     return false;
                 };
@@ -58,6 +59,12 @@ $(function () {
                 });
             })
         });
+        var managepromise = getdatapromise.then(function (data){
+            // $(this).parents("td").prev().children(".myid").html();
+            $('delete').prev().on('click',function(){
+               
+            })
+        })
         // deletepromise.then(function (data) {
         //         console.log(data + '123');
         //     },
@@ -73,6 +80,9 @@ $(function () {
     });
 
     update(9);
+    $('delete').prev().click(function(){
+        alert($(this).parents("td").prev().children(".myid").html());
+    })
 });
 //防止重复提交
 // var pendingRequests = {};
